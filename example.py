@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from ultralytics.nn.modules import Detect, C2f, Conv, Bottleneck
 
-
+# This class is required to be present in the file where you use the pruned weights
 class C2f_v2(nn.Module):
     # CSP Bottleneck with 2 convolutions
     def __init__(self, c1, c2, n=1, shortcut=False, g=1, e=0.5):  # ch_in, ch_out, number, shortcut, groups, expansion
@@ -20,8 +20,8 @@ class C2f_v2(nn.Module):
         y.extend(m(y[-1]) for m in self.m)
         return self.cv2(torch.cat(y, 1))
 
-base_model = YOLO('weights/v8nano-50ep-16bs/weights/best.pt')
-pruned_model = YOLO('weights/v8nano-pruned-10ep-1iter-4workers-30pr/weights/best.pt') # PR = prune rate
+base_model = YOLO('base-v8nano-50ep-16bs/weights/best.pt')
+pruned_model = YOLO('10ep-10pr-1iter/weights/best.pt') # PR = prune rate
 
 print(f"Base model no. of params: {sum(p.numel() for p in base_model.parameters())}")
 print("-------------------------------------------------------------")
