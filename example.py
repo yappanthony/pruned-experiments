@@ -21,7 +21,7 @@ class C2f_v2(nn.Module):
         return self.cv2(torch.cat(y, 1))
 
 base_model = YOLO('base-v8nano-50ep-16bs/weights/best.pt')
-pruned_model = YOLO('10ep-10pr-1iter/weights/best.pt') # PR = prune rate
+pruned_model = YOLO('batch-1 (10ep-1iter)/10ep-10pr-1iter\weights/best.pt') # PR = prune rate
 
 print(f"Base model no. of params: {sum(p.numel() for p in base_model.parameters())}")
 print("-------------------------------------------------------------")
