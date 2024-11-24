@@ -1,0 +1,450 @@
+{
+    "batch-1 (10ep-1iter)": {
+        "10ep-10pr-1iter": {
+            "precision": {
+                "car_front": 0.985,
+                "car_back:": 0.989,
+                "license_plate": 0.85
+            },
+            "mean_precision": 0.941,
+            "recall": {
+                "car_front": 0.981,
+                "car_back:": 0.987,
+                "license_plate": 0.975
+            },
+            "mean_recall": 0.981,
+            "map50": 0.971,
+            "map50_95": 0.855,
+            "all_map50_95": {
+                "car_front": 0.924,
+                "car_back:": 0.94,
+                "license_plate": 0.702
+            },
+            "no_of_params": 2513056
+        },
+        "10ep-20pr-1iter": {
+            "precision": {
+                "car_front": 0.968,
+                "car_back:": 0.99,
+                "license_plate": 0.853
+            },
+            "mean_precision": 0.937,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.954
+            },
+            "mean_recall": 0.971,
+            "map50": 0.976,
+            "map50_95": 0.852,
+            "all_map50_95": {
+                "car_front": 0.924,
+                "car_back:": 0.93,
+                "license_plate": 0.702
+            },
+            "no_of_params": 2080696
+        },
+        "10ep-30pr-1iter": {
+            "precision": {
+                "car_front": 0.942,
+                "car_back:": 1.0,
+                "license_plate": 0.87
+            },
+            "mean_precision": 0.937,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.984,
+                "license_plate": 0.943
+            },
+            "mean_recall": 0.966,
+            "map50": 0.972,
+            "map50_95": 0.826,
+            "all_map50_95": {
+                "car_front": 0.899,
+                "car_back:": 0.911,
+                "license_plate": 0.669
+            },
+            "no_of_params": 1685617
+        },
+        "10ep-40pr-1iter": {
+            "precision": {
+                "car_front": 0.985,
+                "car_back:": 0.973,
+                "license_plate": 0.86
+            },
+            "mean_precision": 0.939,
+            "recall": {
+                "car_front": 0.967,
+                "car_back:": 1.0,
+                "license_plate": 0.91
+            },
+            "mean_recall": 0.959,
+            "map50": 0.968,
+            "map50_95": 0.808,
+            "all_map50_95": {
+                "car_front": 0.891,
+                "car_back:": 0.901,
+                "license_plate": 0.633
+            },
+            "no_of_params": 1343792
+        },
+        "10ep-50pr-1iter": {
+            "precision": {
+                "car_front": 0.974,
+                "car_back:": 0.978,
+                "license_plate": 0.861
+            },
+            "mean_precision": 0.938,
+            "recall": {
+                "car_front": 0.957,
+                "car_back:": 0.975,
+                "license_plate": 0.861
+            },
+            "mean_recall": 0.931,
+            "map50": 0.95,
+            "map50_95": 0.764,
+            "all_map50_95": {
+                "car_front": 0.858,
+                "car_back:": 0.874,
+                "license_plate": 0.56
+            },
+            "no_of_params": 1061057
+        }
+    },
+    "batch-2 (10ep-8iter)": {
+        "10ep-10pr-8iter": {
+            "precision": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.867
+            },
+            "mean_precision": 0.942,
+            "recall": {
+                "car_front": 0.98,
+                "car_back:": 0.983,
+                "license_plate": 0.951
+            },
+            "mean_recall": 0.971,
+            "map50": 0.976,
+            "map50_95": 0.865,
+            "all_map50_95": {
+                "car_front": 0.933,
+                "car_back:": 0.944,
+                "license_plate": 0.717
+            },
+            "no_of_params": 2400217
+        },
+        "10ep-20pr-8iter": {
+            "precision": {
+                "car_front": 0.991,
+                "car_back:": 1.0,
+                "license_plate": 0.879
+            },
+            "mean_precision": 0.957,
+            "recall": {
+                "car_front": 0.986,
+                "car_back:": 0.984,
+                "license_plate": 0.897
+            },
+            "mean_recall": 0.955,
+            "map50": 0.977,
+            "map50_95": 0.859,
+            "all_map50_95": {
+                "car_front": 0.918,
+                "car_back:": 0.94,
+                "license_plate": 0.718
+            },
+            "no_of_params": 1973964
+        },
+        "10ep-30pr-8iter": {
+            "precision": {
+                "car_front": 0.989,
+                "car_back:": 0.995,
+                "license_plate": 0.866
+            },
+            "mean_precision": 0.95,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.934
+            },
+            "mean_recall": 0.964,
+            "map50": 0.976,
+            "map50_95": 0.852,
+            "all_map50_95": {
+                "car_front": 0.91,
+                "car_back:": 0.936,
+                "license_plate": 0.709
+            },
+            "no_of_params": 1582198
+        },
+        "10ep-40pr-8iter": {
+            "precision": {
+                "car_front": 0.98,
+                "car_back:": 0.993,
+                "license_plate": 0.886
+            },
+            "mean_precision": 0.953,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.89
+            },
+            "mean_recall": 0.95,
+            "map50": 0.969,
+            "map50_95": 0.836,
+            "all_map50_95": {
+                "car_front": 0.908,
+                "car_back:": 0.933,
+                "license_plate": 0.668
+            },
+            "no_of_params": 1282973
+        },
+        "10ep-50pr-8iter": {
+            "precision": {
+                "car_front": 1.0,
+                "car_back:": 0.996,
+                "license_plate": 0.884
+            },
+            "mean_precision": 0.96,
+            "recall": {
+                "car_front": 0.97,
+                "car_back:": 0.987,
+                "license_plate": 0.869
+            },
+            "mean_recall": 0.942,
+            "map50": 0.973,
+            "map50_95": 0.838,
+            "all_map50_95": {
+                "car_front": 0.911,
+                "car_back:": 0.934,
+                "license_plate": 0.668
+            },
+            "no_of_params": 995044
+        }
+    },
+    "batch-3 (10ep-16iter)": {
+        "10ep-10pr-16iter": {
+            "precision": {
+                "car_front": 0.986,
+                "car_back:": 0.989,
+                "license_plate": 0.743
+            },
+            "mean_precision": 0.906,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.757
+            },
+            "mean_recall": 0.905,
+            "map50": 0.916,
+            "map50_95": 0.732,
+            "all_map50_95": {
+                "car_front": 0.862,
+                "car_back:": 0.903,
+                "license_plate": 0.431
+            },
+            "no_of_params": 2257072
+        },
+        "10ep-20pr-16iter": {
+            "precision": {
+                "car_front": 0.995,
+                "car_back:": 0.989,
+                "license_plate": 0.809
+            },
+            "mean_precision": 0.931,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.764
+            },
+            "mean_recall": 0.907,
+            "map50": 0.939,
+            "map50_95": 0.751,
+            "all_map50_95": {
+                "car_front": 0.867,
+                "car_back:": 0.901,
+                "license_plate": 0.486
+            },
+            "no_of_params": 1883488
+        },
+        "10ep-30pr-16iter": {
+            "precision": {
+                "car_front": 0.888,
+                "car_back:": 0.992,
+                "license_plate": 0.752
+            },
+            "mean_precision": 0.877,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.962,
+                "license_plate": 0.721
+            },
+            "mean_recall": 0.885,
+            "map50": 0.915,
+            "map50_95": 0.725,
+            "all_map50_95": {
+                "car_front": 0.85,
+                "car_back:": 0.894,
+                "license_plate": 0.432
+            },
+            "no_of_params": 1489117
+        },
+        "10ep-40pr-16iter": {
+            "precision": {
+                "car_front": 0.955,
+                "car_back:": 0.955,
+                "license_plate": 0.69
+            },
+            "mean_precision": 0.866,
+            "recall": {
+                "car_front": 0.914,
+                "car_back:": 0.987,
+                "license_plate": 0.564
+            },
+            "mean_recall": 0.822,
+            "map50": 0.863,
+            "map50_95": 0.651,
+            "all_map50_95": {
+                "car_front": 0.801,
+                "car_back:": 0.859,
+                "license_plate": 0.292
+            },
+            "no_of_params": 1254853
+        },
+        "10ep-50pr-16iter": {
+            "precision": {
+                "car_front": 0.924,
+                "car_back:": 0.986,
+                "license_plate": 0.713
+            },
+            "mean_precision": 0.874,
+            "recall": {
+                "car_front": 0.957,
+                "car_back:": 0.975,
+                "license_plate": 0.59
+            },
+            "mean_recall": 0.84,
+            "map50": 0.868,
+            "map50_95": 0.68,
+            "all_map50_95": {
+                "car_front": 0.831,
+                "car_back:": 0.879,
+                "license_plate": 0.33
+            },
+            "no_of_params": 921340
+        }
+    },
+    "batch-4 (25ep-8iter)": {
+        "25ep-10pr-8iter": {
+            "precision": {
+                "car_front": 0.982,
+                "car_back:": 0.993,
+                "license_plate": 0.87
+            },
+            "mean_precision": 0.948,
+            "recall": {
+                "car_front": 0.986,
+                "car_back:": 0.987,
+                "license_plate": 0.943
+            },
+            "mean_recall": 0.972,
+            "map50": 0.973,
+            "map50_95": 0.875,
+            "all_map50_95": {
+                "car_front": 0.945,
+                "car_back:": 0.946,
+                "license_plate": 0.735
+            },
+            "no_of_params": 2400217
+        },
+        "25ep-20pr-8iter": {
+            "precision": {
+                "car_front": 0.981,
+                "car_back:": 1.0,
+                "license_plate": 0.874
+            },
+            "mean_precision": 0.952,
+            "recall": {
+                "car_front": 1.0,
+                "car_back:": 0.991,
+                "license_plate": 0.908
+            },
+            "mean_recall": 0.966,
+            "map50": 0.975,
+            "map50_95": 0.875,
+            "all_map50_95": {
+                "car_front": 0.936,
+                "car_back:": 0.943,
+                "license_plate": 0.747
+            },
+            "no_of_params": 1973964
+        },
+        "25ep-30pr-8iter": {
+            "precision": {
+                "car_front": 0.99,
+                "car_back:": 0.993,
+                "license_plate": 0.865
+            },
+            "mean_precision": 0.949,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.918
+            },
+            "mean_recall": 0.959,
+            "map50": 0.971,
+            "map50_95": 0.863,
+            "all_map50_95": {
+                "car_front": 0.934,
+                "car_back:": 0.935,
+                "license_plate": 0.722
+            },
+            "no_of_params": 1582198
+        },
+        "25ep-40pr-8iter": {
+            "precision": {
+                "car_front": 0.971,
+                "car_back:": 0.989,
+                "license_plate": 0.838
+            },
+            "mean_precision": 0.933,
+            "recall": {
+                "car_front": 0.981,
+                "car_back:": 0.987,
+                "license_plate": 0.943
+            },
+            "mean_recall": 0.97,
+            "map50": 0.978,
+            "map50_95": 0.864,
+            "all_map50_95": {
+                "car_front": 0.926,
+                "car_back:": 0.932,
+                "license_plate": 0.735
+            },
+            "no_of_params": 1282973
+        },
+        "25ep-50pr-8iter": {
+            "precision": {
+                "car_front": 0.992,
+                "car_back:": 0.983,
+                "license_plate": 0.873
+            },
+            "mean_precision": 0.95,
+            "recall": {
+                "car_front": 0.957,
+                "car_back:": 0.987,
+                "license_plate": 0.943
+            },
+            "mean_recall": 0.962,
+            "map50": 0.975,
+            "map50_95": 0.853,
+            "all_map50_95": {
+                "car_front": 0.915,
+                "car_back:": 0.937,
+                "license_plate": 0.707
+            },
+            "no_of_params": 995044
+        }
+    }
+}

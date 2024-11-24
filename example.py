@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import torch
 from torch import nn
-from ultralytics.nn.modules import Detect, C2f, Conv, Bottleneck
+from ultralytics.nn.modules import Conv, Bottleneck
 
 # This class is required to be present in the file where you use the pruned weights
 class C2f_v2(nn.Module):
@@ -21,7 +21,7 @@ class C2f_v2(nn.Module):
         return self.cv2(torch.cat(y, 1))
 
 base_model = YOLO('base-v8nano-50ep-16bs/weights/best.pt')
-pruned_model = YOLO('batch-1 (10ep-1iter)/10ep-10pr-1iter\weights/best.pt') # PR = prune rate
+pruned_model = YOLO('batch-1 (10ep-1iter)/10ep-10pr-1iter/weights/best.pt') # PR = prune rate
 
 print(f"Base model no. of params: {sum(p.numel() for p in base_model.parameters())}")
 print("-------------------------------------------------------------")

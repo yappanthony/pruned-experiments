@@ -1,5 +1,4 @@
 # Use this data.yaml for validation - change the paths according to your folder structure
-path: custom_dataset
 train: train/images
 val: test/images
 
