@@ -292,25 +292,25 @@
         },
         "10ep-40pr-16iter": {
             "precision": {
-                "car_front": 0.955,
-                "car_back:": 0.955,
-                "license_plate": 0.69
+                "car_front": 0.966,
+                "car_back:": 0.959,
+                "license_plate": 0.81
             },
-            "mean_precision": 0.866,
+            "mean_precision": 0.912,
             "recall": {
-                "car_front": 0.914,
+                "car_front": 0.957,
                 "car_back:": 0.987,
-                "license_plate": 0.564
+                "license_plate": 0.648
             },
-            "mean_recall": 0.822,
-            "map50": 0.863,
-            "map50_95": 0.651,
+            "mean_recall": 0.864,
+            "map50": 0.901,
+            "map50_95": 0.661,
             "all_map50_95": {
-                "car_front": 0.801,
-                "car_back:": 0.859,
-                "license_plate": 0.292
+                "car_front": 0.794,
+                "car_back:": 0.808,
+                "license_plate": 0.38
             },
-            "no_of_params": 1254853
+            "no_of_params": 1182451
         },
         "10ep-50pr-16iter": {
             "precision": {
