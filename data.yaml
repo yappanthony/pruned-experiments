@@ -1,0 +1,11 @@
+# Use this data.yaml for validation - change the paths according to your folder structure
+path: custom_dataset
+train: train/images
+val: test/images
+
+nc: 3
+
+names:
+  0: car_front
+  1: car_back
+  2: license_plate
