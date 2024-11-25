@@ -23,29 +23,40 @@ class C2f_v2(nn.Module):
         return self.cv2(torch.cat(y, 1))
     
     
-def store_results():
+def store_results(exp_batches, json_file):
     """
     Validates YOLO weights on a given dataset
     
     Stores particular metrics in a json file
+
+    Params:
+    exp_batches: (array of strings) the folders where the weights are - weights should be found either 1 or 2 levels deep from the given folders
+    json_file: (string) filename.json where the data will be saved
 
     Metrics to store: 
     precison, recall, mean precision, mean recall, map50, map50-95, all classes' map50-95, number of model parameters
     """
     results_dict = {}
 
-    batch_experiments_folders = ['batch-1 (10ep-1iter)', 'batch-2 (10ep-8iter)', 'batch-3 (10ep-16iter)', 'batch-4 (25ep-8iter)']
-    for batch in batch_experiments_folders:
+    for batch in exp_batches:
         folders = os.listdir(batch)
+        print(folders)
+
         for folder in folders:
-            model = YOLO(f"{batch}/{folder}/weights/best.pt")
+            isBaseModel = 'weights' in folders
+            weights_path = f"{batch}/{folder}/weights/best.pt"
+
+            if isBaseModel:
+                weights_path = f"{batch}/weights/best.pt"
+
+            model = YOLO(weights_path)
             no_of_params = sum(p.numel() for p in model.parameters())
             results = model.val()
 
-            if str(batch) not in results_dict:
+            if str(batch) not in results_dict and not isBaseModel:
                 results_dict[str(batch)] = {}
-           
-            results_dict[str(batch)][str(folder)] = {
+
+            stored_results = {
                 'precision': {
                     "car_front": round(results.box.p[0], 3),
                     "car_back:": round(results.box.p[1], 3),
@@ -68,10 +79,18 @@ def store_results():
                 'no_of_params': no_of_params
             }
 
-    with open('experiment_results.json', 'w') as outfile:
+            if isBaseModel:
+                results_dict[str(batch)] = stored_results
+                break
+            else:
+                results_dict[str(batch)][str(folder)] = stored_results
+
+    with open(json_file, 'w') as outfile:
         json.dump(results_dict, outfile, indent=4)
 
 
 if __name__ == "__main__":
-    store_results()
+    batch_experiments_folders = ['batch-1 (10ep-1iter)', 'batch-2 (10ep-8iter)', 'batch-3 (10ep-16iter)', 'batch-4 (25ep-8iter)']
+    base_model_folders = ['v8nano-50ep-16bs', 'v8small-50ep-16bs']
+    store_results(base_model_folders, 'base_model_results.json')
 
