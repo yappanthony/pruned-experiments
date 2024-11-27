@@ -40,7 +40,6 @@ def store_results(exp_batches, json_file):
 
     for batch in exp_batches:
         folders = os.listdir(batch)
-        print(folders)
 
         for folder in folders:
             isBaseModel = 'weights' in folders

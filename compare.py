@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 import json
 
 # batch-1, batch-2, batch-3, batch-4
@@ -43,25 +44,36 @@ print(pr40)
 print(pr50)
 
 # Create a bar chart
-x = len(experiment_batches)
-width = 0.6 / x
+def bar_graph():
+    x = len(experiment_batches)
+    width = 0.6 / x
 
-bar_positions = np.arange(len(experiment_batches)) - (x - 1) * width / 2
+    bar_positions = np.arange(len(experiment_batches)) - (x - 1) * width / 2
 
-fig, ax = plt.subplots(figsize=(12, 8))
-rects1 = ax.bar(bar_positions, pr10, width, label='10 PR')
-rects2 = ax.bar(bar_positions + width, pr20, width, label='20 PR')
-rects3 = ax.bar(bar_positions + 2 * width, pr30, width, label='30 PR')
-rects4 = ax.bar(bar_positions + 3 * width, pr40, width, label='40 PR')
-rects5 = ax.bar(bar_positions + 4 * width, pr50, width, label='50 PR')
+    fig, ax = plt.subplots(figsize=(12, 8))
+    rects1 = ax.bar(bar_positions, pr10, width, label='10 PR')
+    rects2 = ax.bar(bar_positions + width, pr20, width, label='20 PR')
+    rects3 = ax.bar(bar_positions + 2 * width, pr30, width, label='30 PR')
+    rects4 = ax.bar(bar_positions + 3 * width, pr40, width, label='40 PR')
+    rects5 = ax.bar(bar_positions + 4 * width, pr50, width, label='50 PR')
 
-ax.set_xticks(bar_positions + width)
-ax.set_xticklabels(experiment_batches)
+    ax.set_xticks(bar_positions + width)
+    ax.set_xticklabels(experiment_batches)
 
-ax.set_title('Model Performance Comparison')
-ax.set_ylabel('mAP50-95')
-ax.set_xlabel('Prune Rate')
+    ax.set_title('Model Performance Comparison')
+    ax.set_ylabel('mAP50-95')
+    ax.set_xlabel('Prune Rate')
 
-ax.legend()
-plt.ylim(0.6, 0.9)
-plt.show()
+    ax.legend()
+    plt.ylim(0.6, 0.9)
+    plt.show()
+
+def make_dataframe():
+    data = {'10 PR': pr10, '20 PR': pr20, '30 PR': pr30, '40 PR': pr40, '50 PR': pr50}
+    df = pd.DataFrame(data)
+    df.index = ['10ep-1iter', '10ep-8iter', '10ep-16iter', '25ep-8iter']
+    print(df)
+
+
+if __name__ == '__main__':
+    bar_graph()
