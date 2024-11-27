@@ -19,7 +19,8 @@
             "car_back:": 0.945,
             "license_plate": 0.769
         },
-        "no_of_params": 3011433
+        "no_of_params": 3011433,
+        "inference_speed": 37.61
     },
     "v8small-50ep-16bs": {
         "precision": {
@@ -41,6 +42,7 @@
             "car_back:": 0.947,
             "license_plate": 0.763
         },
-        "no_of_params": 11136761
+        "no_of_params": 11136761,
+        "inference_speed": 86.837
     }
 }

@@ -75,7 +75,8 @@ def store_results(exp_batches, json_file):
                     "car_back:": round(results.box.maps[1], 3),
                     "license_plate": round(results.box.maps[2], 3)
                 },
-                'no_of_params': no_of_params
+                'no_of_params': no_of_params,
+                'inference_speed': round(results.speed['inference'], 3)
             }
 
             if isBaseModel:
@@ -89,7 +90,14 @@ def store_results(exp_batches, json_file):
 
 
 if __name__ == "__main__":
-    batch_experiments_folders = ['batch-1 (10ep-1iter)', 'batch-2 (10ep-8iter)', 'batch-3 (10ep-16iter)', 'batch-4 (25ep-8iter)']
+    batch_experiments_folders = [
+        'batch-1 (10ep-1iter)', 
+        'batch-2 (10ep-8iter)', 
+        'batch-3 (10ep-16iter)', 
+        'batch-4 (25ep-8iter)',
+        'batch-5 (25ep-16iter)',
+        'batch-6 (50ep-8iter)'
+    ]
     base_model_folders = ['v8nano-50ep-16bs', 'v8small-50ep-16bs']
     store_results(base_model_folders, 'base_model_results.json')
 

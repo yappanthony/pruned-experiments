@@ -62,7 +62,6 @@ def bar_graph():
 
     ax.set_title('Model Performance Comparison')
     ax.set_ylabel('mAP50-95')
-    ax.set_xlabel('Prune Rate')
 
     ax.legend()
     plt.ylim(0.6, 0.9)
@@ -71,9 +70,9 @@ def bar_graph():
 def make_dataframe():
     data = {'10 PR': pr10, '20 PR': pr20, '30 PR': pr30, '40 PR': pr40, '50 PR': pr50}
     df = pd.DataFrame(data)
-    df.index = ['10ep-1iter', '10ep-8iter', '10ep-16iter', '25ep-8iter']
+    df.index = ['10ep-1iter', '10ep-8iter', '10ep-16iter', '25ep-8iter', '25ep-16iter', '50ep-8iter']
     print(df)
 
 
 if __name__ == '__main__':
-    bar_graph()
+    make_dataframe()
