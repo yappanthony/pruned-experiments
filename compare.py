@@ -44,7 +44,9 @@ print(pr40)
 print(pr50)
 
 # Create a bar chart
-def bar_graph():
+def make_bar_graph():
+    plt.style.use('seaborn-v0_8-whitegrid')
+
     x = len(experiment_batches)
     width = 0.6 / x
 
@@ -65,6 +67,7 @@ def bar_graph():
 
     ax.legend()
     plt.ylim(0.6, 0.9)
+    print(plt.style.available)
     plt.show()
 
 def make_dataframe():
@@ -75,4 +78,4 @@ def make_dataframe():
 
 
 if __name__ == '__main__':
-    make_dataframe()
+    make_bar_graph()
