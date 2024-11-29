@@ -133,4 +133,5 @@ def compare_base_and_pruned(batch_name, pruned_name, exp_results_path, base_resu
 
 
 if __name__ == '__main__':
-    compare_base_and_pruned('batch-6 (50ep-8iter)', '50ep-40pr-8iter', 'experiment_results.json', 'base_model_results.json')
+    # compare_base_and_pruned('batch-6 (50ep-8iter)', '50ep-40pr-8iter', 'experiment_results.json', 'base_model_results.json')
+    make_bar_graph()

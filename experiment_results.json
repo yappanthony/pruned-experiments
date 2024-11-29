@@ -21,7 +21,7 @@
                 "license_plate": 0.702
             },
             "no_of_params": 2513056,
-            "inference_speed": 39.492
+            "inference_speed": 32.116
         },
         "10ep-20pr-1iter": {
             "precision": {
@@ -44,7 +44,7 @@
                 "license_plate": 0.702
             },
             "no_of_params": 2080696,
-            "inference_speed": 37.266
+            "inference_speed": 26.295
         },
         "10ep-30pr-1iter": {
             "precision": {
@@ -67,7 +67,7 @@
                 "license_plate": 0.669
             },
             "no_of_params": 1685617,
-            "inference_speed": 31.749
+            "inference_speed": 23.275
         },
         "10ep-40pr-1iter": {
             "precision": {
@@ -90,7 +90,7 @@
                 "license_plate": 0.633
             },
             "no_of_params": 1343792,
-            "inference_speed": 28.153
+            "inference_speed": 20.905
         },
         "10ep-50pr-1iter": {
             "precision": {
@@ -113,7 +113,7 @@
                 "license_plate": 0.56
             },
             "no_of_params": 1061057,
-            "inference_speed": 22.663
+            "inference_speed": 16.535
         }
     },
     "batch-2 (10ep-8iter)": {
@@ -138,7 +138,7 @@
                 "license_plate": 0.717
             },
             "no_of_params": 2400217,
-            "inference_speed": 32.489
+            "inference_speed": 23.623
         },
         "10ep-20pr-8iter": {
             "precision": {
@@ -161,7 +161,7 @@
                 "license_plate": 0.718
             },
             "no_of_params": 1973964,
-            "inference_speed": 24.496
+            "inference_speed": 22.579
         },
         "10ep-30pr-8iter": {
             "precision": {
@@ -184,7 +184,7 @@
                 "license_plate": 0.709
             },
             "no_of_params": 1582198,
-            "inference_speed": 23.01
+            "inference_speed": 20.945
         },
         "10ep-40pr-8iter": {
             "precision": {
@@ -207,7 +207,7 @@
                 "license_plate": 0.668
             },
             "no_of_params": 1282973,
-            "inference_speed": 20.031
+            "inference_speed": 17.625
         },
         "10ep-50pr-8iter": {
             "precision": {
@@ -230,7 +230,7 @@
                 "license_plate": 0.668
             },
             "no_of_params": 995044,
-            "inference_speed": 19.017
+            "inference_speed": 15.731
         }
     },
     "batch-3 (10ep-16iter)": {
@@ -255,7 +255,7 @@
                 "license_plate": 0.431
             },
             "no_of_params": 2257072,
-            "inference_speed": 28.362
+            "inference_speed": 20.13
         },
         "10ep-20pr-16iter": {
             "precision": {
@@ -278,7 +278,7 @@
                 "license_plate": 0.486
             },
             "no_of_params": 1883488,
-            "inference_speed": 26.467
+            "inference_speed": 18.171
         },
         "10ep-30pr-16iter": {
             "precision": {
@@ -301,7 +301,7 @@
                 "license_plate": 0.432
             },
             "no_of_params": 1489117,
-            "inference_speed": 23.475
+            "inference_speed": 17.413
         },
         "10ep-40pr-16iter": {
             "precision": {
@@ -324,7 +324,7 @@
                 "license_plate": 0.38
             },
             "no_of_params": 1182451,
-            "inference_speed": 17.116
+            "inference_speed": 15.594
         },
         "10ep-50pr-16iter": {
             "precision": {
@@ -347,10 +347,127 @@
                 "license_plate": 0.33
             },
             "no_of_params": 921340,
-            "inference_speed": 15.416
+            "inference_speed": 14.008
         }
     },
-    "batch-4 (25ep-8iter)": {
+    "batch-4 (25ep-4iter)": {
+        "25ep-10pr-4iter": {
+            "precision": {
+                "car_front": 0.986,
+                "car_back:": 0.983,
+                "license_plate": 0.876
+            },
+            "mean_precision": 0.948,
+            "recall": {
+                "car_front": 0.99,
+                "car_back:": 0.987,
+                "license_plate": 0.91
+            },
+            "mean_recall": 0.962,
+            "map50": 0.965,
+            "map50_95": 0.864,
+            "all_map50_95": {
+                "car_front": 0.935,
+                "car_back:": 0.931,
+                "license_plate": 0.724
+            },
+            "no_of_params": 2432405,
+            "inference_speed": 28.313
+        },
+        "25ep-20pr-4iter": {
+            "precision": {
+                "car_front": 0.985,
+                "car_back:": 0.992,
+                "license_plate": 0.874
+            },
+            "mean_precision": 0.95,
+            "recall": {
+                "car_front": 0.983,
+                "car_back:": 0.987,
+                "license_plate": 0.965
+            },
+            "mean_recall": 0.978,
+            "map50": 0.98,
+            "map50_95": 0.877,
+            "all_map50_95": {
+                "car_front": 0.931,
+                "car_back:": 0.94,
+                "license_plate": 0.762
+            },
+            "no_of_params": 2030210,
+            "inference_speed": 25.958
+        },
+        "25ep-30pr-4iter": {
+            "precision": {
+                "car_front": 0.985,
+                "car_back:": 0.989,
+                "license_plate": 0.86
+            },
+            "mean_precision": 0.945,
+            "recall": {
+                "car_front": 0.978,
+                "car_back:": 0.987,
+                "license_plate": 0.957
+            },
+            "mean_recall": 0.974,
+            "map50": 0.973,
+            "map50_95": 0.871,
+            "all_map50_95": {
+                "car_front": 0.935,
+                "car_back:": 0.945,
+                "license_plate": 0.733
+            },
+            "no_of_params": 1650995,
+            "inference_speed": 22.336
+        },
+        "25ep-40pr-4iter": {
+            "precision": {
+                "car_front": 0.991,
+                "car_back:": 0.987,
+                "license_plate": 0.871
+            },
+            "mean_precision": 0.95,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.993,
+                "license_plate": 0.926
+            },
+            "mean_recall": 0.963,
+            "map50": 0.971,
+            "map50_95": 0.866,
+            "all_map50_95": {
+                "car_front": 0.938,
+                "car_back:": 0.944,
+                "license_plate": 0.715
+            },
+            "no_of_params": 1317248,
+            "inference_speed": 19.096
+        },
+        "25ep-50pr-4iter": {
+            "precision": {
+                "car_front": 1.0,
+                "car_back:": 0.984,
+                "license_plate": 0.83
+            },
+            "mean_precision": 0.938,
+            "recall": {
+                "car_front": 0.982,
+                "car_back:": 1.0,
+                "license_plate": 0.967
+            },
+            "mean_recall": 0.983,
+            "map50": 0.973,
+            "map50_95": 0.851,
+            "all_map50_95": {
+                "car_front": 0.924,
+                "car_back:": 0.935,
+                "license_plate": 0.693
+            },
+            "no_of_params": 1010779,
+            "inference_speed": 15.94
+        }
+    },
+    "batch-5 (25ep-8iter)": {
         "25ep-10pr-8iter": {
             "precision": {
                 "car_front": 0.982,
@@ -372,7 +489,7 @@
                 "license_plate": 0.735
             },
             "no_of_params": 2400217,
-            "inference_speed": 26.616
+            "inference_speed": 24.423
         },
         "25ep-20pr-8iter": {
             "precision": {
@@ -395,7 +512,7 @@
                 "license_plate": 0.747
             },
             "no_of_params": 1973964,
-            "inference_speed": 23.435
+            "inference_speed": 21.754
         },
         "25ep-30pr-8iter": {
             "precision": {
@@ -418,7 +535,7 @@
                 "license_plate": 0.722
             },
             "no_of_params": 1582198,
-            "inference_speed": 22.992
+            "inference_speed": 20.706
         },
         "25ep-40pr-8iter": {
             "precision": {
@@ -441,7 +558,7 @@
                 "license_plate": 0.735
             },
             "no_of_params": 1282973,
-            "inference_speed": 20.207
+            "inference_speed": 19.11
         },
         "25ep-50pr-8iter": {
             "precision": {
@@ -464,10 +581,127 @@
                 "license_plate": 0.707
             },
             "no_of_params": 995044,
-            "inference_speed": 18.273
+            "inference_speed": 15.193
         }
     },
-    "batch-5 (25ep-16iter)": {
+    "batch-6 (25ep-12iter)": {
+        "25ep-10pr-12iter": {
+            "precision": {
+                "car_front": 0.985,
+                "car_back:": 0.988,
+                "license_plate": 0.849
+            },
+            "mean_precision": 0.941,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.987,
+                "license_plate": 0.934
+            },
+            "mean_recall": 0.964,
+            "map50": 0.967,
+            "map50_95": 0.863,
+            "all_map50_95": {
+                "car_front": 0.941,
+                "car_back:": 0.947,
+                "license_plate": 0.701
+            },
+            "no_of_params": 2260892,
+            "inference_speed": 23.272
+        },
+        "25ep-20pr-12iter": {
+            "precision": {
+                "car_front": 0.97,
+                "car_back:": 0.98,
+                "license_plate": 0.858
+            },
+            "mean_precision": 0.936,
+            "recall": {
+                "car_front": 0.986,
+                "car_back:": 0.987,
+                "license_plate": 0.943
+            },
+            "mean_recall": 0.972,
+            "map50": 0.973,
+            "map50_95": 0.866,
+            "all_map50_95": {
+                "car_front": 0.935,
+                "car_back:": 0.949,
+                "license_plate": 0.716
+            },
+            "no_of_params": 1908358,
+            "inference_speed": 21.13
+        },
+        "25ep-30pr-12iter": {
+            "precision": {
+                "car_front": 0.958,
+                "car_back:": 0.992,
+                "license_plate": 0.888
+            },
+            "mean_precision": 0.946,
+            "recall": {
+                "car_front": 0.984,
+                "car_back:": 0.987,
+                "license_plate": 0.913
+            },
+            "mean_recall": 0.961,
+            "map50": 0.971,
+            "map50_95": 0.845,
+            "all_map50_95": {
+                "car_front": 0.926,
+                "car_back:": 0.914,
+                "license_plate": 0.694
+            },
+            "no_of_params": 1554752,
+            "inference_speed": 18.615
+        },
+        "25ep-40pr-12iter": {
+            "precision": {
+                "car_front": 0.993,
+                "car_back:": 0.987,
+                "license_plate": 0.862
+            },
+            "mean_precision": 0.947,
+            "recall": {
+                "car_front": 0.971,
+                "car_back:": 0.993,
+                "license_plate": 0.918
+            },
+            "mean_recall": 0.961,
+            "map50": 0.975,
+            "map50_95": 0.86,
+            "all_map50_95": {
+                "car_front": 0.938,
+                "car_back:": 0.94,
+                "license_plate": 0.702
+            },
+            "no_of_params": 1216182,
+            "inference_speed": 16.319
+        },
+        "25ep-50pr-12iter": {
+            "precision": {
+                "car_front": 0.97,
+                "car_back:": 0.985,
+                "license_plate": 0.826
+            },
+            "mean_precision": 0.927,
+            "recall": {
+                "car_front": 1.0,
+                "car_back:": 1.0,
+                "license_plate": 0.97
+            },
+            "mean_recall": 0.99,
+            "map50": 0.974,
+            "map50_95": 0.848,
+            "all_map50_95": {
+                "car_front": 0.914,
+                "car_back:": 0.931,
+                "license_plate": 0.7
+            },
+            "no_of_params": 962813,
+            "inference_speed": 15.343
+        }
+    },
+    "batch-7 (25ep-16iter)": {
         "25ep-10pr-16iter": {
             "precision": {
                 "car_front": 1.0,
@@ -489,7 +723,7 @@
                 "license_plate": 0.522
             },
             "no_of_params": 2257072,
-            "inference_speed": 23.082
+            "inference_speed": 20.054
         },
         "25ep-20pr-16iter": {
             "precision": {
@@ -512,7 +746,7 @@
                 "license_plate": 0.518
             },
             "no_of_params": 1883488,
-            "inference_speed": 21.134
+            "inference_speed": 18.927
         },
         "25ep-30pr-16iter": {
             "precision": {
@@ -535,7 +769,7 @@
                 "license_plate": 0.522
             },
             "no_of_params": 1489117,
-            "inference_speed": 19.781
+            "inference_speed": 17.506
         },
         "25ep-40pr-16iter": {
             "precision": {
@@ -558,7 +792,7 @@
                 "license_plate": 0.516
             },
             "no_of_params": 1182451,
-            "inference_speed": 17.444
+            "inference_speed": 14.801
         },
         "25ep-50pr-16iter": {
             "precision": {
@@ -581,10 +815,10 @@
                 "license_plate": 0.44
             },
             "no_of_params": 921340,
-            "inference_speed": 15.77
+            "inference_speed": 14.427
         }
     },
-    "batch-6 (50ep-8iter)": {
+    "batch-8 (50ep-8iter)": {
         "50ep-10pr-8iter": {
             "precision": {
                 "car_front": 0.998,
@@ -606,7 +840,7 @@
                 "license_plate": 0.758
             },
             "no_of_params": 2400217,
-            "inference_speed": 27.945
+            "inference_speed": 24.565
         },
         "50ep-20pr-8iter": {
             "precision": {
@@ -629,7 +863,7 @@
                 "license_plate": 0.743
             },
             "no_of_params": 1973964,
-            "inference_speed": 27.205
+            "inference_speed": 21.825
         },
         "50ep-30pr-8iter": {
             "precision": {
@@ -652,7 +886,7 @@
                 "license_plate": 0.727
             },
             "no_of_params": 1582198,
-            "inference_speed": 23.685
+            "inference_speed": 21.523
         },
         "50ep-40pr-8iter": {
             "precision": {
@@ -675,7 +909,7 @@
                 "license_plate": 0.753
             },
             "no_of_params": 1282973,
-            "inference_speed": 21.728
+            "inference_speed": 18.282
         },
         "50ep-50pr-8iter": {
             "precision": {
@@ -698,7 +932,7 @@
                 "license_plate": 0.731
             },
             "no_of_params": 995044,
-            "inference_speed": 16.678
+            "inference_speed": 15.604
         }
     }
 }

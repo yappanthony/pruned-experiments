@@ -94,10 +94,12 @@ if __name__ == "__main__":
         'batch-1 (10ep-1iter)', 
         'batch-2 (10ep-8iter)', 
         'batch-3 (10ep-16iter)', 
-        'batch-4 (25ep-8iter)',
-        'batch-5 (25ep-16iter)',
-        'batch-6 (50ep-8iter)'
+        'batch-4 (25ep-4iter)',
+        'batch-5 (25ep-8iter)',
+        'batch-6 (25ep-12iter)',
+        'batch-7 (25ep-16iter)',
+        'batch-8 (50ep-8iter)'
     ]
     base_model_folders = ['v8nano-50ep-16bs', 'v8small-50ep-16bs']
-    store_results(base_model_folders, 'base_model_results.json')
+    store_results(batch_experiments_folders, 'experiment_results.json')
 
