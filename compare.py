@@ -76,6 +76,61 @@ def make_dataframe():
     df.index = ['10ep-1iter', '10ep-8iter', '10ep-16iter', '25ep-8iter', '25ep-16iter', '50ep-8iter']
     print(df)
 
+def compare_base_and_pruned(batch_name, pruned_name, exp_results_path, base_results_path):
+    """
+    Params:
+        (string) batch_name -> ex. "batch-1 (10ep-1iter)"
+        (string) pruned_name -> ex. "50ep-30pr-8iter"
+        (string) exp_results_path -> filepath of the json file where the experiment results are stored
+        (string) base_results_path -> filepath of the json file where the base model results are stored
+    """
+
+    data = {}
+    json_data = {}
+    with open(exp_results_path, 'r') as f:
+        json_data = json.load(f)
+
+    if batch_name not in json_data or pruned_name not in json_data[batch_name]:
+        print('ERROR: Either batch_name not in exp_results_path or pruned_name not in specified batch')
+        return    
+
+    data[pruned_name] = json_data[batch_name][pruned_name]
+
+    with open(base_results_path, 'r') as f:
+        json_data = json.load(f)
+
+    for key, value in json_data.items():
+        data[key] = value
+
+    models = list(data.keys())
+    params = []
+    accuracy = []
+    speed = []
+
+    for key, value in data.items():
+        idx = 0
+        if key == "v8small-50ep-16bs":
+            idx = 1
+        if key == pruned_name:
+            idx = 2
+
+        params.insert(idx, value['no_of_params'])
+        accuracy.insert(idx, value['map50_95'])
+        speed.insert(idx, value['inference_speed'])
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    ax.barh(models, params, color='red', label='No. of params')
+    ax.barh(models, accuracy, color='blue', label='Accuracy (%)')
+    ax.barh(models, speed, color='green', label='Speed (ms)')
+
+    # Set labels and title
+    ax.set_xlabel('Normalized Value')
+    ax.set_title('Model Comparison')
+    ax.legend()
+
+    plt.show()
+
 
 if __name__ == '__main__':
-    make_bar_graph()
+    compare_base_and_pruned('batch-6 (50ep-8iter)', '50ep-40pr-8iter', 'experiment_results.json', 'base_model_results.json')
